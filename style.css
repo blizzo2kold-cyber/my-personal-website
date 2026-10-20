@@ -1,0 +1,168 @@
+/* ==========================================================
+   style.css — Samuel Ankrah | Hoops & Streetwear
+   Theme: an outdoor basketball court
+     court blue  #1F3A5F  (header, nav, footer, headings)
+     ball orange #E0671B  (accents, links, trim lines)
+     concrete    #E6E4E0  (page background)
+     paper       #FFFFFF  (content sections)
+     ink         #24272B  (body text)
+   ========================================================== */
+
+/* ---------- Whole page ---------- */
+body {
+  margin: 0;
+  font-family: "Source Sans 3", Arial, Helvetica, sans-serif;  /* consistent font */
+  font-size: 18px;
+  line-height: 1.65;              /* space between lines = easier reading */
+  color: #24272B;
+  background-color: #E6E4E0;
+}
+
+/* ---------- Header ---------- */
+header {
+  background-color: #1F3A5F;
+  color: #FFFFFF;
+  padding: 48px 20px 36px;
+  text-align: center;
+  border-bottom: 8px solid #E0671B;   /* orange trim, like a jersey stripe */
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Oswald", Impact, "Arial Narrow", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+header p {
+  margin: 12px 0 0;
+  font-size: 20px;
+  color: #D6DEE8;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  background-color: #16293F;
+  padding: 14px 20px;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  margin: 4px 6px;
+  padding: 6px 16px;
+  font-family: "Oswald", Impact, "Arial Narrow", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #E0671B;
+}
+
+/* the page you are on right now */
+nav a.current {
+  border: 2px solid #E0671B;
+}
+
+/* ---------- Main content ---------- */
+main {
+  max-width: 760px;       /* keeps lines short enough to read comfortably */
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  background-color: #FFFFFF;
+  margin-bottom: 28px;
+  padding: 28px 32px;
+  border-left: 6px solid #E0671B;
+}
+
+/* ---------- Headings ---------- */
+h2,
+h3 {
+  font-family: "Oswald", Impact, "Arial Narrow", sans-serif;
+  color: #1F3A5F;
+  margin-top: 0;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+/* ---------- Links in the content ---------- */
+main a {
+  color: #B84E0C;               /* darker orange so it's readable on white */
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+main a:hover,
+main a:focus {
+  color: #1F3A5F;
+}
+
+/* ---------- List ---------- */
+ul {
+  margin: 0;
+  padding-left: 24px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+li::marker {
+  color: #E0671B;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #1F3A5F;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 24px 20px;
+  border-top: 8px solid #E0671B;
+}
+
+footer p {
+  margin: 4px 0;
+}
+
+footer a {
+  color: #FFB47F;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #FFFFFF;
+}
+
+/* ---------- Smaller screens (phones) ---------- */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 42px;
+  }
+
+  section {
+    padding: 20px;
+  }
+}
